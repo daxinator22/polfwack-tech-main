@@ -12,7 +12,7 @@ Accent Color: #a7a8a7
 function App() {
   return (
     <div>
-      <Header class='primary-color'></Header>
+      <Header></Header>
       <h1 class='accent'>This is my website</h1>
     </div>
   );
