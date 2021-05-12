@@ -1,17 +1,20 @@
 import './App.css';
+import Page from './Page';
+import Header from './Header';
+
+/*
+Main color: #4d4d4d
+Secondary color: #4bcadb
+Accent Color: #a7a8a7
+*/
+
 
 function App() {
   return (
     <div>
-      <h1>This is my website</h1>
-      <Page></Page>
+      <Header class='primary-color'></Header>
+      <h1 class='accent'>This is my website</h1>
     </div>
-  );
-}
-
-function Page(){
-  return(
-    <h1>This is a different function</h1>
   );
 }
 
