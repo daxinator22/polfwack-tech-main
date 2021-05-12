@@ -8,12 +8,12 @@ Secondary color: #4bcadb
 Accent Color: #a7a8a7
 */
 
+const pages = ['Home', 'About', 'Contact'];
 
 function App() {
   return (
     <div>
-      <Header></Header>
-      <h1 class='accent'>This is my website</h1>
+      <Header pages={pages}></Header>
     </div>
   );
 }
