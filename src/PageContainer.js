@@ -11,13 +11,21 @@ class PageContainer extends React.Component{
 
   render() {
     const pageStyle = {
-      width: this.pageWidth + "%"
+      display: 'flex',
+      width: this.pageWidth + "%",
+      justifyContent: 'center',
+      alignItems: 'center',
+    }
+
+    const pageContainerStyle = {
+      display: 'flex',
+      width: this.props.width,
     }
 
     const pages = this.pages.map((pageName) =>{
       return (
-        <div>
-          <p>{pageName}</p>
+        <div style={pageStyle}>
+          <p style={{textAlign: 'center'}}>{pageName}</p>
         </div>
       );
     });
@@ -25,7 +33,7 @@ class PageContainer extends React.Component{
     console.log(pages);
 
     return (
-      <div>{pages}</div>
+      <div style={pageContainerStyle}>{pages}</div>
     );
   }
 }

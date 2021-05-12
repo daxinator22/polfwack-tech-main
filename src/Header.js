@@ -17,7 +17,7 @@ class Header extends React.Component{
         <div style={logoStyle}>
           <Logo url={logoLocation} dim={height}></Logo>
         </div>
-        <PageContainer pages={this.props.pages} style={pageContainerStyle}></PageContainer>
+        <PageContainer pages={this.props.pages} width={pageContainerWidth}></PageContainer>
       </div>
     );
   }
@@ -27,17 +27,15 @@ class Header extends React.Component{
 /*-------Styles-------*/
 
 const height = '100px';
+const pageContainerWidth = "60%";
+const logoContainerWidth = "40%";
 
 const headerStyle = {
   display: 'flex',
 }
 
-const pageContainerStyle = {
-  display: 'flex',
-}
-
 const logoStyle = {
-  width: '40%',
+  width: logoContainerWidth,
   paddingTop: '5px',
   display: 'flex',
   justifyContent: 'center',

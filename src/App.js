@@ -8,7 +8,7 @@ Secondary color: #4bcadb
 Accent Color: #a7a8a7
 */
 
-const pages = ['Home', 'About', 'Contact'];
+const pages = ['Home', 'About', 'Contact', 'Portfolio', 'Login'];
 
 function App() {
   return (
