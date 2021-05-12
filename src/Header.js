@@ -6,14 +6,20 @@ import PageContainer from './PageContainer';
 import {render} from 'react-dom';
 
 class Header extends React.Component{
-    render(){
+  constructor(props){
+    super(props);
+    console.log(this.props.pages);
+  }
+
+  render(){
     return (
-    <div style={headerStyle} class='primary'>
-      <div style={logoStyle}>
-        <Logo url={logoLocation} dim={height}></Logo>
+      <div style={headerStyle} className='primary'>
+        <div style={logoStyle}>
+          <Logo url={logoLocation} dim={height}></Logo>
+        </div>
+        <PageContainer pages={this.props.pages} style={pageContainerStyle}></PageContainer>
       </div>
-      <PageContainer pages={this.props.pages}></PageContainer>
-    </div>);
+    );
   }
 }
 
@@ -26,9 +32,8 @@ const headerStyle = {
   display: 'flex',
 }
 
-const pagesStyle = {
-  marginTop: '0px',
-  height: height,
+const pageContainerStyle = {
+  display: 'flex',
 }
 
 const logoStyle = {
