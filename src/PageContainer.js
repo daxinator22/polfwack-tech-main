@@ -22,9 +22,21 @@ class PageContainer extends React.Component{
       width: this.props.width,
     }
 
+    function changeBackgroundToAccent(component){
+      component.target.className = 'accent';
+    }
+
+    function changeBackgroundToPrimary(component){
+      component.target.className = '';
+    }
+
     const pages = this.pages.map((pageName) =>{
       return (
-        <div style={pageStyle}>
+        <div
+          style={pageStyle}
+          onMouseEnter={changeBackgroundToAccent}
+          onMouseOut={changeBackgroundToPrimary}
+        >
           <p style={{textAlign: 'center'}}>{pageName}</p>
         </div>
       );
