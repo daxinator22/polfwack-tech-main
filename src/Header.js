@@ -6,18 +6,18 @@ import PageContainer from './PageContainer';
 import {render} from 'react-dom';
 
 class Header extends React.Component{
-  constructor(props){
-    super(props);
-    console.log(this.props.pages);
-  }
-
   render(){
     return (
       <div style={headerStyle} className='primary'>
         <div style={logoStyle}>
           <Logo url={logoLocation} dim={height}></Logo>
         </div>
-        <PageContainer pages={this.props.pages} width={pageContainerWidth}></PageContainer>
+        <PageContainer
+          pages={this.props.pages}
+          width={pageContainerWidth}
+          setCurrentPage={this.props.setCurrentPage}
+        >
+          </PageContainer>
       </div>
     );
   }

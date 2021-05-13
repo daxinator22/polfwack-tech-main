@@ -6,7 +6,6 @@ class PageContainer extends React.Component{
     super(props);
     this.pageWidth = Math.floor(100 / this.props.pages.length);
     this.pages = this.props.pages;
-    console.log(this.pages);
   }
 
   render() {
@@ -32,17 +31,20 @@ class PageContainer extends React.Component{
 
     const pages = this.pages.map((pageName) =>{
       return (
-        <div
+        <a
           style={pageStyle}
           onMouseEnter={changeBackgroundToAccent}
           onMouseOut={changeBackgroundToPrimary}
+          onClick={() => {
+            this.props.setCurrentPage(pageName);
+            console.log(`Page was changed to ${pageName}`);            
+          }}
+          key={pageName}
         >
-          <p style={{textAlign: 'center'}}>{pageName}</p>
-        </div>
+          {pageName}
+        </a>
       );
     });
-
-    console.log(pages);
 
     return (
       <div style={pageContainerStyle}>{pages}</div>
