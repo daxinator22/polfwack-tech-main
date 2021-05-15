@@ -1,6 +1,7 @@
 import './App.css';
 import logoLocation from './res/logo-white.png';
 import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Logo from './Logo';
 import PageContainer from './PageContainer';
 import {render} from 'react-dom';
@@ -15,9 +16,8 @@ class Header extends React.Component{
         <PageContainer
           pages={this.props.pages}
           width={pageContainerWidth}
-          setCurrentPage={this.props.setCurrentPage}
         >
-          </PageContainer>
+        </PageContainer>
       </div>
     );
   }

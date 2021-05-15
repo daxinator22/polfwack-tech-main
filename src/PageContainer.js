@@ -1,5 +1,6 @@
 import React from 'react';
 import render from 'react-dom';
+import {Link, withRouter} from 'react-router-dom';
 
 class PageContainer extends React.Component{
   constructor(props){
@@ -31,18 +32,14 @@ class PageContainer extends React.Component{
 
     const pages = this.pages.map((pageName) =>{
       return (
-        <a
+        <Link
           style={pageStyle}
           onMouseEnter={changeBackgroundToAccent}
           onMouseOut={changeBackgroundToPrimary}
-          onClick={() => {
-            this.props.setCurrentPage(pageName);
-            console.log(`Page was changed to ${pageName}`);            
-          }}
           key={pageName}
         >
           {pageName}
-        </a>
+        </Link>
       );
     });
 
@@ -52,4 +49,4 @@ class PageContainer extends React.Component{
   }
 }
 
-export default PageContainer;
+export default withRouter(PageContainer);
