@@ -28,6 +28,11 @@
   display: flex;
 }
 
+.pageLink{
+  text-align: center;
+  align-items: center;
+}
+
 body{
   margin: 0px;
 }

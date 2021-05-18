@@ -14,6 +14,15 @@ var logo = add(logoContainer, 'img');
 logo.src = 'logos/logo-white.png';
 logo.className = 'logo';
 
+const pageNames = ['Home', 'About', 'Services', 'Contact'];
+
 var pageContainer = add(header, 'div');
-var page = add(pageContainer, 'p');
-page.textContent = 'Home';
+pageContainer.className = 'pageContainer';
+
+var width = 1 / pageNames.length * 100;
+for(var page of pageNames){
+  var pageLink = add(pageContainer, 'a');
+  pageLink.style.width = width + '%';
+  pageLink.className = 'pageLink';
+  pageLink.textContent = page;
+}
