@@ -1,0 +1,33 @@
+.primary{
+  background-color: #0336ff;
+  color: #FFFFFF;
+}
+
+.accent{
+  background-color: #d602ee;
+  color: #FFFFFF;
+}
+
+.header{
+  padding-top: 5px;
+  display: flex;
+}
+
+.logoContainer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  height: 110px;
+}
+
+.pageContainer{
+  width: 50%;
+  display: flex;
+}
+
+body{
+  margin: 0px;
+}
