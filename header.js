@@ -4,6 +4,18 @@ const add = (parent, elementType) => {
   return child;
 }
 
+var stylesheet = add(document.head, 'link');
+stylesheet.rel = 'stylesheet';
+stylesheet.href = 'header.css';
+
+var googleFontStatic = add(document.head, 'link');
+googleFontStatic.rel = 'preconnect';
+googleFontStatic.href = 'https://fonts.gstatic.com';
+
+var googleFontFamily = add(document.head, 'link');
+googleFontFamily.rel = 'stylesheet';
+googleFontFamily.href = 'https://fonts.googleapis.com/css2?family=Cousine&display=swap';
+
 var header = add(document.body, 'div');
 header.className = 'primary header';
 

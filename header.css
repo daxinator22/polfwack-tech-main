@@ -9,12 +9,12 @@
 }
 
 .header{
-  padding-top: 5px;
   display: flex;
 }
 
 .logoContainer{
-  width: 50%;
+  width: 40%;
+  padding-top: 5px;
   display: flex;
   justify-content: center;
 }
@@ -24,13 +24,19 @@
 }
 
 .pageContainer{
-  width: 50%;
+  width: 60%;
   display: flex;
 }
 
 .pageLink{
   text-align: center;
-  align-items: center;
+  font-family: 'Cousine', monospace;
+  padding-top: 40px;
+}
+
+.pageLink:hover{
+  background-color: #d602ee;
+  color: #FFFFFF;
 }
 
 body{
