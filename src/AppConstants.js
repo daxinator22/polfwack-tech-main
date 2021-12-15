@@ -5,3 +5,7 @@ export const COLORS = {
     accent2: "#FFC857",
     text: "white",
 }
+
+export const TEXT_PROPS = {
+    font: "Bebas Neue, cursive",
+}

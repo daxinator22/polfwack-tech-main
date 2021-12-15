@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 function Logo(props) {
     return (
         <div style={styles.logo}>
-            <img height={props.height} width={props.width} src={logo}/>
+            <img height={props.height} width={props.width} src={logo} alt={props.alt}/>
         </div>
     );
 }
