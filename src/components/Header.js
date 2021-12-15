@@ -4,12 +4,11 @@ import PageLink from "./PageLink";
 
 function Header(props) {
     var pageLinkWidth = (1 / props.pages.length) * 100;
-    console.log(pageLinkWidth);
 
     return (
         <div style={styles.header}>
             <Logo height={100} alt="PolfWack Logo"></Logo>
-            <div style={styles.pageContainer}>
+            <div style={styles.pageLinkContainer}>
                 {props.pages.map(title => {
                     return <PageLink title={title} width={pageLinkWidth + "%"}></PageLink>;
                 })}
@@ -20,12 +19,12 @@ function Header(props) {
 
 const styles = {
     header: {
-        backgroundColor: COLORS.primary1,
+        backgroundColor: COLORS.primary2,
         color: COLORS.text,
         height: "130px",
         display: "flex",
     },
-    pageContainer: {
+    pageLinkContainer: {
         width: "80%",
         display: "flex"
     }
