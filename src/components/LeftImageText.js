@@ -1,20 +1,21 @@
 import {COLORS} from "../AppConstants";
 import TextBox from "./TextBox";
+import Image from "./Image";
 
 function LeftImageText(props) {
     return (
-        <div style={styles.imageContainer}>
-            <img style={styles.image} src={props.src}></img>
+        <div style={styles.imageTextContainer}>
+            <img style={styles.imageContainer} src={props.src}/>
             <TextBox title={props.title} btnText={props.btnText}>{props.children}</TextBox>
         </div>
     )
 }
 
 const styles = {
-    image: {
+    imageContainer: {
         width: "40%",
     },
-    imageContainer: {
+    imageTextContainer: {
         display: "flex",
         justifyContent: "left",
         alignItems: "center",
@@ -24,9 +25,6 @@ const styles = {
     spacer: {
         width: "20%",
     },
-    text: {
-        
-    }
 }
 
 export default LeftImageText;

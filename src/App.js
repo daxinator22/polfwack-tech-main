@@ -14,8 +14,8 @@ function App() {
 const pages = [
   "Home",
   "About Us",
-  "Portfolio",
   "Services",
+  "Portfolio",
   "Contact Us"
 ]
 

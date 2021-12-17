@@ -1,20 +1,25 @@
 import {COLORS} from "../AppConstants";
 import TextBox from "./TextBox";
+import Image from "./Image";
 
 function RightImageText(props) {
     return (
-        <div style={styles.imageContainer}>
+        <div style={styles.imageTextContainer}>
             <TextBox title={props.title} btnText={props.btnText}>{props.children}</TextBox>
-            <img style={styles.image} src={props.src}></img>
+            <div style={styles.imageContainer}>
+                <Image src={props.src} cols={props.imgCols} height={300} width={300}></Image>
+            </div>
         </div>
     )
 }
 
 const styles = {
-    image: {
-        width: "40%",
-    },
     imageContainer: {
+        width: "40%",
+        padding: "0% 2% 0% 2%",
+        backgroundColor: COLORS.accent1,
+    },
+    imageTextContainer: {
         display: "flex",
         justifyContent: "left",
         alignItems: "center",
