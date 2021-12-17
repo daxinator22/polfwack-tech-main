@@ -16,7 +16,12 @@ function PageLink(props) {
         onMouseLeave={() => {
             setHover(false);
         }}>
-            <p>{props.title}</p>
+            <p style={{
+                ...styles.pageLinkText,
+                ...(hover ? styles.pageLinkTextHover : null),
+            }}>
+                {props.title}
+            </p>
         </div>
     );
 }
@@ -31,6 +36,12 @@ const styles = {
     },
     pageLinkHover: {
         backgroundColor: COLORS.accent1,
+    },
+    pageLinkText: {
+        transition: "all .2s ease-in-out",
+    },
+    pageLinkTextHover: {
+        transform: "scale(1.1)",
     }
 }
 

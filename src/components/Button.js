@@ -6,8 +6,7 @@ function Button(props){
     return (
         <button style={{
             ...styles.button,
-            ...(hover ? styles.buttonHover : null)
-
+            ...(hover ? styles.buttonHover : null),
         }}
         onMouseEnter={() => {
             setHover(true);
@@ -29,10 +28,10 @@ const styles = {
         color: COLORS.text,
         fontFamily: TEXT_PROPS.font,
         fontSize: "16px",
+        transition: "all .2s ease-in-out",
     },
     buttonHover: {
-        transfrom: "scale(1.1)",
-        transitionDuration: "0.5s",
+        transform: "scale(1.1)",
     }
 }
 
