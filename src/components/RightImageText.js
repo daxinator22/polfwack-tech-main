@@ -1,11 +1,11 @@
 import {COLORS} from "../AppConstants";
 import TextBox from "./TextBox";
 
-function LeftImageText(props) {
+function RightImageText(props) {
     return (
         <div style={styles.imageContainer}>
-            <img style={styles.image} src={props.src}></img>
             <TextBox title={props.title} btnText={props.btnText}>{props.children}</TextBox>
+            <img style={styles.image} src={props.src}></img>
         </div>
     )
 }
@@ -21,12 +21,6 @@ const styles = {
         backgroundColor: COLORS.accent2,
         fontSize: "20px",
     },
-    spacer: {
-        width: "20%",
-    },
-    text: {
-        
-    }
 }
 
-export default LeftImageText;
+export default RightImageText;
