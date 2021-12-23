@@ -5,7 +5,7 @@ import Image from "./Image";
 function LeftImageText(props) {
     return (
         <div style={styles.imageTextContainer}>
-            <img style={styles.imageContainer} src={props.src}/>
+            <Image style={styles.imageContainer} src={props.src}/>
             <TextBox title={props.title} btnText={props.btnText}>{props.children}</TextBox>
         </div>
     )

@@ -1,36 +1,53 @@
+function getImagesInRow(cols, row, src){
+    let i = row * cols;
+
+    var images = [];
+    while (i < (row + 1) * cols) {
+        images.push(<td><img style={styles.image} src={src[i]}/></td>);
+    }
+
+    return images;
+}
+
 function Image(props) {
     var src = props.src;
     if (Array.isArray(src)){
         var cols = props.cols;
+        var rows = [];
+
+        var numRows = (src.length / cols);
+        let i = 0;
+        while (i < numRows) {
+            rows.push(<tr>{getImagesInRow(cols, i, src)}</tr>);
+            i++;
+        }
+
         return (
             <div style={{
-                ...styles.imageContainer,
-                ...{
-                    height: props.height,
-                    width: props.width,
-                }
+                ...props.style,
+                ...styles.imageContainer
             }}>
-                <div style={styles.row}>
-                    <img style={styles.image} src={src[0]}/>
-                    <img style={styles.image} src={src[1]}/>
-                </div>
-                <div style={styles.row}>
-                    <img style={styles.image} src={src[2]}/>
-                    <img style={styles.image} src={src[3]}/>
-                </div>
+                <table>
+                    {rows}
+                </table>
             </div>
         );
     }
     else {
         return (
-            <img src={props.src}/>
+            <img 
+                style={{
+                    ...props.style
+                }}
+                src={props.src}
+                alt={`${props.src}`}
+            />
         );
     }
 }
 
 const styles = {
     imageContainer: {
-        margin: "40px 40px 40px 40px",
     },
     row: {
         height: "50%",
@@ -39,7 +56,7 @@ const styles = {
     },
     image: {
         width: "40%",
-        padding: "5% 5% 5% 5%",
+        padding: "5% 10% 5% 10%",
     }
 }
 
