@@ -12,7 +12,7 @@ function TextBox(props){
 
 const styles = {
     textBox: {
-        padding: "0 5% 0 5%",
+        padding: "5% 5% 5% 5%",
     }
 }
 

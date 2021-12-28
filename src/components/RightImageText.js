@@ -15,6 +15,8 @@ const styles = {
     imageContainer: {
         width: "40%",
         backgroundColor: COLORS.accent1,
+        height: "300px",
+        padding: "5% 0% 5% 0%",
     },
     imageTextContainer: {
         display: "flex",
