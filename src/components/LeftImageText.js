@@ -14,6 +14,7 @@ function LeftImageText(props) {
 const styles = {
     imageContainer: {
         width: "40%",
+        backgroundColor: COLORS.accent2,
     },
     imageTextContainer: {
         display: "flex",

@@ -21,13 +21,15 @@ function Image(props) {
     }
     else {
         return (
-            <img 
-                style={{
-                    ...props.style
-                }}
-                src={props.src}
-                alt={`${props.src}`}
-            />
+            <div styles={props.style}>
+                <img 
+                    style={{
+                        width: "100%"
+                    }}
+                    src={props.src}
+                    alt={`${props.src}`}
+                />
+            </div>
         );
     }
 }
