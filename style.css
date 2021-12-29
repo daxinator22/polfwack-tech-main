@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --primary-1: #3e5c76;
-    --primary-2: #0d1321;
-    --accent-1: #748cab;
-    --accent-2: #1d2d44;
+    --accent-1: #3e5c76;
+    --primary-2: #748cab;
+    --accent-2: #0d1321;
+    --primary-1: #1d2d44;
     --text-color: white;
 }
 
@@ -49,4 +49,60 @@ body {
 .page-link:hover {
     background-color: var(--accent-2);
     font-size: 32px;
+    cursor: pointer;
+}
+
+.page-body {
+    background-color: var(--primary-2);
+    font-family: 'Bebas Neue', cursive;
+    color: var(--text-color);
+}
+
+.page-title-cont {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/blue-city.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+.image-text {
+    background-color: var(--accent-1);
+    display: flex;
+}
+
+.text-box {
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: var(--accent-2);
+    padding: 2% 5% 2% 5%;
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+}
+
+.button:hover {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.img-table {
+    text-align: center;
+}
+
+.img-cell {
+    width: 50%;
 }
