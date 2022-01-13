@@ -106,3 +106,17 @@ h2 {
 .img-cell {
     width: 50%;
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.selected-page {
+    background-color: var(--accent-2);
+}
+
+.rounded-box {
+    background-color: var(--accent-1);
+    border-radius: 40px;
+}
