@@ -120,3 +120,7 @@ a {
     background-color: var(--accent-1);
     border-radius: 40px;
 }
+
+p {
+    font-size: 1.2rem;
+}
