@@ -124,3 +124,12 @@ a {
 p {
     font-size: 1.2rem;
 }
+
+.service-bubble-row {
+    display: flex;
+}
+
+.service-bubble {
+    width: 22%;
+    margin: 2% 1% 2% 1%;
+}
