@@ -127,9 +127,34 @@ p {
 
 .service-bubble-row {
     display: flex;
+    padding: 0 1% 0 1%;
 }
 
 .service-bubble {
     width: 22%;
     margin: 2% 1% 2% 1%;
+}
+
+.portfolio-bubble-row {
+    display: flex;
+    padding: 0 1% 0 1%;
+}
+
+.portfolio-bubble {
+    width: 22%;
+    margin: 2% 1% 2% 1%;
+}
+
+.portfolio-tech-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.portfolio-tech {
+    width: 33%;
+    background-color: var(--primary-2);
+    margin: 0 2% 0 2%;
+    border-radius: 1rem;
+    font-size: 0.8rem;
 }
