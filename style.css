@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
     --accent-1: #3e5c76;
@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
     background-color: var(--primary-1);
     color: var(--text-color);
     height: 130px;
@@ -54,7 +54,7 @@ body {
 
 .page-body {
     background-color: var(--primary-2);
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
     color: var(--text-color);
 }
 
