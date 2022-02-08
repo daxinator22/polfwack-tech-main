@@ -165,3 +165,32 @@ p {
     font-size: 1rem;
     text-align: center;
 }
+
+.text-input {
+    height: 1.5rem;
+    width: 100%;
+}
+
+.submit-button {
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: var(--accent-2);
+    margin-top: 2%;
+    padding: 2% 5% 2% 5%;
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+}
+
+.submit-button:hover {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: 'Oswald', sans-serif;
+}
+
+input {
+    font-family: 'Oswald', sans-serif;
+}
